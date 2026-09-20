@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "defaultProgramId": "storage",
+  "defaultPolicy": {
+    "safeMax": 0.30,
+    "hazardMin": 0.70,
+    "confidenceMin": 0.65,
+    "highPriorityRarityMin": 1.5
+  },
+  "programs": [
+    {
+      "id": "storage",
+      "name": "Standard Storage Dispatch",
+      "shortName": "Storage",
+      "description": "Primary warehouse classification sorting materials across 6 dedicated storage bays.",
+      "objective": "Classify this Minecraft block, modded device, or entity into the primary storage bay according to material and functional purpose."
+    },
+    {
+      "id": "expedition",
+      "name": "Expedition & Raid Prep",
+      "shortName": "Expedition",
+      "description": "Prepares an adventuring party by separating field rations, tactical blocks, combat gear, and currency.",
+      "objective": "Classify this item according to its tactical utility for survival exploration, boss raids, and Nether expeditions."
+    },
+    {
+      "id": "recycling",
+      "name": "Industrial Reclamation & Smelting",
+      "shortName": "Recycling",
+      "description": "Routes items for blast furnace smelting, pulverizer crushing, e-waste electro-refining, or compost.",
+      "objective": "Classify this item into the appropriate industrial reprocessing and material reclamation pipeline."
+    }
+  ],
+  "branches": [
+    {
+      "id": "ores_and_gems",
+      "index": 1,
+      "name": "Resources & Materials",
+      "shortName": "Resources",
+      "color": "#38bdf8",
+      "borderColor": "#0284c7",
+      "targetY": 80,
+      "criteria": "Raw ores, deepslate minerals, metal blocks, ingots (Steel, Manyullyn, Draconium, Enderium, Bronze, Gold, Iron), gems, crystals, dusts, dense resource blocks",
+      "programCriteria": {
+        "storage": "Raw ores, deepslate minerals, metal blocks, ingots (Steel, Manyullyn, Draconium, Enderium, Bronze, Gold, Iron), gems, crystals, dusts, dense resource blocks",
+        "expedition": "Valuable expedition currency & trade materials: emeralds, gold ingots, diamonds, and netherite for village trading or piglin bartering",
+        "recycling": "Smeltable high-purity ores and scrap metals ready for blast furnace resmelting and metallurgical refining"
+      }
+    },
+    {
+      "id": "building_blocks",
+      "index": 2,
+      "name": "Construction & Decor",
+      "shortName": "Building",
+      "color": "#fb923c",
+      "borderColor": "#ea580c",
+      "targetY": 184,
+      "criteria": "Structural and architectural materials: wood planks, timber, bricks, stone, structural casings (Andesite/Brass/Copper Casing), warded/seared glass, scaffolding, tiles, slabs, stairs, walls",
+      "programCriteria": {
+        "storage": "Structural and architectural materials: wood planks, timber, bricks, stone, structural casings (Andesite/Brass/Copper Casing), warded/seared glass, scaffolding, tiles, slabs, stairs, walls",
+        "expedition": "Field shelter & tactical bridging: cobblestone, dirt, scaffolding, ladders, obsidian, and construction blocks for quick fortifications",
+        "recycling": "Crushable stone masonry, cobblestone, slag, and concrete aggregates for pulverizer crushing into gravel and sand"
+      }
+    },
+    {
+      "id": "mechanical_and_logistics",
+      "index": 3,
+      "name": "Mechanics & Logistics",
+      "shortName": "Mechanics",
+      "color": "#eab308",
+      "borderColor": "#ca8a04",
+      "targetY": 288,
+      "criteria": "Kinetic and physical mechanisms: Create shafts, gears, presses, belts, physical conveyors, chutes, hoppers, pulleys, and Tinkers smeltery casting tables, faucets, and drains",
+      "programCriteria": {
+        "storage": "Kinetic and physical mechanisms: Create shafts, gears, presses, belts, physical conveyors, chutes, hoppers, pulleys, and Tinkers smeltery casting tables, faucets, and drains",
+        "expedition": "Field transport & terrain mobility: minecarts, boats, ropes, pulleys, elevators, gliders, and mechanical traversal apparatus",
+        "recycling": "Mechanical scrap & kinetic assemblies: damaged shafts, gears, worn conveyor belts, and pistons for metal part salvage"
+      }
+    },
+    {
+      "id": "power_and_digital",
+      "index": 4,
+      "name": "Power & Digital Systems",
+      "shortName": "Power & AE2",
+      "color": "#f87171",
+      "borderColor": "#dc2626",
+      "targetY": 392,
+      "criteria": "Active electrical and digital technology: nuclear reactors, dynamos, generators, RF energy cells, cables, redstone logic gates, AE2 ME drives, terminals, quantum network bridges",
+      "programCriteria": {
+        "storage": "Active electrical and digital technology: nuclear reactors, dynamos, generators, RF energy cells, cables, redstone logic gates, AE2 ME drives, terminals, quantum network bridges",
+        "expedition": "Portable wireless communications & batteries: charged energy cells, wireless terminals, communicators, and redstone sensors",
+        "recycling": "Electronic waste & circuit boards: depleted capacitors, broken wires, burnt logic chips for gold and copper electrolytic recovery"
+      }
+    },
+    {
+      "id": "magic_and_ritual",
+      "index": 5,
+      "name": "Magic & Rituals",
+      "shortName": "Magic",
+      "color": "#c084fc",
+      "borderColor": "#9333ea",
+      "targetY": 496,
+      "criteria": "Arcane and botanical magic: mana generating and functional flowers (Pure Daisy, Hydroangeas), mana pools, altars (Blood Altar, Runic Altar, Infusion Altar), warded jars, essentia tubes, catalysts, runes",
+      "programCriteria": {
+        "storage": "Arcane and botanical magic: mana generating and functional flowers (Pure Daisy, Hydroangeas), mana pools, altars (Blood Altar, Runic Altar, Infusion Altar), warded jars, essentia tubes, catalysts, runes",
+        "expedition": "Combat charms & alchemical consumables: potions, splash draughts, blood orbs, protective runes, wands, and totems of undying",
+        "recycling": "Thaumaturgical flux waste & distillation reagents: tainted soil, depleted vis crystals, and alchemical sludge for essentia distillation"
+      }
+    },
+    {
+      "id": "mob_drops_and_food",
+      "index": 6,
+      "name": "Armory, Food & Organics",
+      "shortName": "Armory & Bio",
+      "color": "#4ade80",
+      "borderColor": "#16a34a",
+      "targetY": 600,
+      "criteria": "Armor, weapons, combat equipment, tools, biological mob drops, monster trophies, crops, food, and organic resources",
+      "programCriteria": {
+        "storage": "Armor, weapons, combat equipment, tools, biological mob drops, monster trophies, crops, food, and organic resources",
+        "expedition": "Field rations & tactical combat gear: weapons, armor, shields, cooked meats, bread, golden carrots, enchanted golden apples, and emergency rations",
+        "recycling": "Organic bio-compost & salvaged gear: worn armor and weapons for smelting salvage, and organic biomass for fertilizer conversion"
+      }
+    }
+  ],
+  "emergencyShunt": {
+    "id": "emergency_shunt",
+    "name": "Reinforced Lava Blast Pit",
+    "color": "#f97316",
+    "targetX": 590,
+    "targetY": 670,
+    "criteria": "Hazardous, explosive, flammable, caustic, radioactive, volatile, or primed destructive items requiring emergency incineration"
+  }
+}

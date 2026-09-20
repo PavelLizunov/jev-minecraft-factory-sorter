@@ -1,0 +1,11 @@
+jev.ninitux.com {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy same-origin
+        X-Frame-Options DENY
+    }
+    reverse_proxy 192.168.0.207:18911 {
+        header_up -Authorization
+    }
+}

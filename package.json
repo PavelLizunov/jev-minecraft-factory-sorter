@@ -1,0 +1,34 @@
+{
+  "name": "jev-minecraft-sorter",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "test": "node --test scripts/jev.test.js scripts/factory.test.js",
+    "catalog:update": "python3 scripts/ingest_catalog.py",
+    "catalog:validate": "python3 scripts/ingest_catalog.py --validate",
+    "test:e2e": "node scripts/e2e_verify.js",
+    "test:failures": "node scripts/ui-failures.js"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "https-proxy-agent": "^9.1.0",
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer": "^25.11.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.2.0"
+  }
+}

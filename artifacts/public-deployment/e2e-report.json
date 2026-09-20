@@ -1,0 +1,234 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "checks": [
+    "55 vanilla blocks preserved",
+    "At least 300 real modded blocks",
+    "English document language",
+    "No document overflow at 1920×1080",
+    "Every catalog PNG decodes in Chromium",
+    "Vanilla filter contains only its mods",
+    "Create filter contains only its mods",
+    "AE2 filter contains only its mods",
+    "Industrial filter contains only its mods",
+    "Mekanism filter contains only its mods",
+    "Magic/Botania filter contains only its mods",
+    "Search finds Mechanical Press",
+    "Search empty state is explicit",
+    "Category filter combines with inventory",
+    "Fresh Jev classification succeeds without fallback",
+    "Actual input and output usage present",
+    "Exact charge derives only from response input usage",
+    "Measured live HTTP roundtrip is positive",
+    "HUD matches exact live response cost",
+    "Custom entity physically arrives in biological bay",
+    "Clear bay works",
+    "Jev identifies TNT hazard",
+    "Hazard reaches lava pit instead of a bay",
+    "Repeated cargo returns explicit zero-charge cache result",
+    "Cache does not inflate session spend",
+    "Number-key hotbar spawns modded cargo",
+    "Pointer drag releases cargo into flight",
+    "Inventory drop creates correct catalog entity",
+    "Anvil closes with Escape",
+    "Anvil close control works",
+    "Audio toggle works",
+    "Batch spawning respects current mod filter",
+    "Active canvas sustains approximately 60 FPS",
+    "Session spend exactly matches sum of live response charges",
+    "Full-HD layout still fits during active operation",
+    "No horizontal overflow at 1280px",
+    "No horizontal overflow at 768px",
+    "No horizontal overflow at 390px",
+    "Keyboard focus reaches an interactive control",
+    "Zero console, page, or request errors"
+  ],
+  "api": [
+    {
+      "status": 200,
+      "body": {
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mob_drops_and_food",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.02,
+        "rarityScore": 0.22,
+        "latencyMs": 1282.3344260000158,
+        "usage": {
+          "input_tokens": 624,
+          "output_tokens": 97
+        },
+        "chargeNanoUsd": "26208",
+        "costUsd": "0.000026208"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": true,
+        "hazardousScore": 0.93,
+        "rarityScore": 0.94,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": true,
+        "hazardousScore": 0.93,
+        "rarityScore": 0.94,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.06,
+        "rarityScore": 1.02,
+        "latencyMs": 1213.4803729999985,
+        "usage": {
+          "input_tokens": 608,
+          "output_tokens": 98
+        },
+        "chargeNanoUsd": "25536",
+        "costUsd": "0.000025536"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.04,
+        "rarityScore": 1.05,
+        "latencyMs": 1232.8233489999839,
+        "usage": {
+          "input_tokens": 606,
+          "output_tokens": 98
+        },
+        "chargeNanoUsd": "25452",
+        "costUsd": "0.000025452"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.05,
+        "rarityScore": 1.19,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "building_blocks",
+        "confidence": 0.97,
+        "isHazardous": false,
+        "hazardousScore": 0.03,
+        "rarityScore": 0.77,
+        "latencyMs": 1329.9282039999962,
+        "usage": {
+          "input_tokens": 606,
+          "output_tokens": 94
+        },
+        "chargeNanoUsd": "25452",
+        "costUsd": "0.000025452"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.04,
+        "rarityScore": 1,
+        "latencyMs": 1197.887733999989,
+        "usage": {
+          "input_tokens": 604,
+          "output_tokens": 98
+        },
+        "chargeNanoUsd": "25368",
+        "costUsd": "0.000025368"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.06,
+        "rarityScore": 1.02,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000"
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "redstone_and_mechanisms",
+        "confidence": 1,
+        "isHazardous": false,
+        "hazardousScore": 0.03,
+        "rarityScore": 1.21,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000"
+      }
+    }
+  ],
+  "errors": [],
+  "searchEndToEndMs": 79.29582499999992,
+  "animation": {
+    "frames": 300,
+    "averageFps": 60.001200024000504,
+    "medianFrameMs": 16.69999999999709,
+    "p95FrameMs": 16.799999999999272
+  },
+  "verdict": "passed"
+}

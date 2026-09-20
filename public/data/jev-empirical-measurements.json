@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "collectedAt": "2026-09-20T16:01:30+03:00",
+  "model": "TypeSafe Jev System 1",
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "methodology": "Empirical live API classification with zero-shot prompt evaluation across 9 canonical benchmark items covering all 6 factory branches and edge-case hazard/uncertainty profiles.",
+  "signatures": {
+    "diamond_ore": {
+      "name": "Diamond Ore",
+      "hazardProb": 0.02,
+      "confidence": 1.0,
+      "chest": "ores_and_gems",
+      "baselineAction": "store"
+    },
+    "tnt": {
+      "name": "TNT Explosive",
+      "hazardProb": 0.92,
+      "confidence": 0.62,
+      "chest": "power_and_digital",
+      "baselineAction": "shunt"
+    },
+    "minecraft:respawn_anchor": {
+      "name": "Respawn Anchor",
+      "hazardProb": 0.54,
+      "confidence": 0.34,
+      "chest": "power_and_digital",
+      "baselineAction": "hold"
+    },
+    "create:mechanical_press": {
+      "name": "Mechanical Press",
+      "hazardProb": 0.06,
+      "confidence": 1.0,
+      "chest": "mechanical_and_logistics",
+      "baselineAction": "store"
+    },
+    "ae2:controller": {
+      "name": "ME Controller",
+      "hazardProb": 0.04,
+      "confidence": 1.0,
+      "chest": "power_and_digital",
+      "baselineAction": "store"
+    },
+    "botania:pure_daisy": {
+      "name": "Pure Daisy",
+      "hazardProb": 0.03,
+      "confidence": 1.0,
+      "chest": "magic_and_ritual",
+      "baselineAction": "store"
+    },
+    "minecraft:creeper_head": {
+      "name": "Creeper Head",
+      "hazardProb": 0.05,
+      "confidence": 1.0,
+      "chest": "mob_drops_and_food",
+      "baselineAction": "store"
+    },
+    "immersiveengineering:crusher": {
+      "name": "Crusher",
+      "hazardProb": 0.07,
+      "confidence": 0.72,
+      "chest": "mechanical_and_logistics",
+      "baselineAction": "store"
+    },
+    "minecraft:copper_door": {
+      "name": "Copper Door",
+      "hazardProb": 0.02,
+      "confidence": 0.97,
+      "chest": "building_blocks",
+      "baselineAction": "store"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://jev.ninitux.com",
+  "verifiedAt": "2026-09-20T19:23:37.628Z",
+  "checks": [
+    "Anonymous / accessible without password",
+    "Anonymous /api/health accessible without password",
+    "Anonymous /api/blocks accessible without password",
+    "Anonymous /data/blocks.json accessible without password",
+    "Anonymous /textures/modded/create_mechanical_press.png accessible without password",
+    "Anonymous API reaches input validation without paid call",
+    "Anonymous application health and complete catalog (700+ blocks & mobs)",
+    "HTTP redirects to HTTPS",
+    "Public TLS certificate validates without insecure overrides",
+    "Existing main website remains healthy"
+  ],
+  "certificate": {
+    "subject": {
+      "CN": "jev.ninitux.com"
+    },
+    "issuer": {
+      "C": "US",
+      "O": "Let's Encrypt",
+      "CN": "YE2"
+    },
+    "validFrom": "Sep 18 20:59:24 2026 GMT",
+    "validTo": "Dec 17 20:59:23 2026 GMT",
+    "fingerprint256": "0E:06:69:EA:FE:90:45:5E:0E:89:DE:BD:F7:6A:CF:CF:AB:81:5A:E8:73:D4:BB:86:4D:AF:D1:0B:9B:FC:60:8B"
+  }
+}

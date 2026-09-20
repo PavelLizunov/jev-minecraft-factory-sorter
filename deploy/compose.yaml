@@ -1,0 +1,25 @@
+services:
+  jev-factory:
+    image: jev-factory:${JEV_REVISION:?Set the verified Git revision}
+    container_name: jev-factory
+    restart: unless-stopped
+    init: true
+    env_file:
+      - /opt/jev-factory/secrets/runtime.env
+    ports:
+      - "192.168.0.207:18911:3333"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 256m
+    cpus: 1.0
+    pids_limit: 64
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"

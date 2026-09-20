@@ -1,0 +1,1188 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "checks": [
+    "At least 55 vanilla blocks preserved",
+    "At least 300 real modded blocks",
+    "English document language",
+    "No document overflow at 1920×1080",
+    "Every catalog PNG decodes in Chromium",
+    "Vanilla filter contains only its mods",
+    "Create filter contains only its mods",
+    "AE2 filter contains only its mods",
+    "Industrial & Tech filter contains only its mods",
+    "Mekanism filter contains only its mods",
+    "Magic filter contains only its mods",
+    "Endgame filter contains only its mods",
+    "Search finds Mechanical Press",
+    "Search empty state is explicit",
+    "Category filter combines with inventory",
+    "Fresh Jev classification succeeds without fallback",
+    "Actual input and output usage present",
+    "Exact charge derives only from response input usage",
+    "Measured live HTTP roundtrip is positive",
+    "HUD matches exact live response cost",
+    "Custom entity physically arrives in biological bay",
+    "Clear bay works",
+    "Jev identifies TNT hazard",
+    "Hazard reaches lava pit instead of a bay",
+    "Repeated cargo returns explicit zero-charge cache result",
+    "Cache does not inflate session spend",
+    "Number-key hotbar spawns modded cargo",
+    "Pointer drag releases cargo into flight",
+    "Inventory drop creates correct catalog entity",
+    "Anvil closes with Escape",
+    "Anvil close control works",
+    "Audio toggle works",
+    "Batch spawning respects current mod filter",
+    "Active canvas sustains approximately 60 FPS",
+    "Session spend exactly matches sum of live response charges",
+    "Full-HD layout still fits during active operation",
+    "No horizontal overflow at 1280px",
+    "No horizontal overflow at 768px",
+    "No horizontal overflow at 390px",
+    "Keyboard focus reaches an interactive control",
+    "Zero console, page, or request errors"
+  ],
+  "api": [
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mob_drops_and_food",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "building_blocks": 0,
+            "ores_and_gems": 0,
+            "magic_and_ritual": 0,
+            "mob_drops_and_food": 1,
+            "power_and_digital": 0,
+            "mechanical_and_logistics": 0
+          },
+          "hazard": 0.02,
+          "rarity": {
+            "0": 0.82,
+            "1": 0.17,
+            "2": 0.01
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.02,
+        "rarityScore": 0.19,
+        "latencyMs": 367.84645300003467,
+        "usage": {
+          "input_tokens": 833,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34986",
+        "costUsd": "0.000034986",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 367.84645300003467,
+            "usage": {
+              "input_tokens": 833,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034986",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mob_drops_and_food",
+                "confidence": 1,
+                "probabilities": {
+                  "building_blocks": 0,
+                  "ores_and_gems": 0,
+                  "magic_and_ritual": 0,
+                  "mob_drops_and_food": 1,
+                  "power_and_digital": 0,
+                  "mechanical_and_logistics": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.02
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.19,
+                "confidence": 0.71,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.82,
+                  "1": 0.17,
+                  "2": 0.01
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "power_and_digital",
+        "action": "shunt",
+        "actionReason": "Hazardous cargo verified (P=93%)",
+        "priority": "high",
+        "confidence": 0.55,
+        "probabilities": {
+          "chest": {
+            "mob_drops_and_food": 0.16,
+            "ores_and_gems": 0.02,
+            "building_blocks": 0.17,
+            "mechanical_and_logistics": 0.02,
+            "power_and_digital": 0.63,
+            "magic_and_ritual": 0
+          },
+          "hazard": 0.93,
+          "rarity": {
+            "0": 0.07,
+            "1": 0.92,
+            "2": 0.01
+          }
+        },
+        "isHazardous": true,
+        "hazardousScore": 0.93,
+        "rarityScore": 0.94,
+        "latencyMs": 374.4460770000005,
+        "usage": {
+          "input_tokens": 821,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34482",
+        "costUsd": "0.000034482",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 374.4460770000005,
+            "usage": {
+              "input_tokens": 821,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034482",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "power_and_digital",
+                "confidence": 0.55,
+                "probabilities": {
+                  "mob_drops_and_food": 0.16,
+                  "ores_and_gems": 0.02,
+                  "building_blocks": 0.17,
+                  "mechanical_and_logistics": 0.02,
+                  "power_and_digital": 0.63,
+                  "magic_and_ritual": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.93
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.94,
+                "confidence": 0.88,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.07,
+                  "1": 0.92,
+                  "2": 0.01
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "cache",
+        "model": "jev-1.13.0",
+        "chest": "power_and_digital",
+        "action": "shunt",
+        "actionReason": "Hazardous cargo verified (P=93%)",
+        "priority": "high",
+        "confidence": 0.55,
+        "probabilities": {
+          "chest": {
+            "mob_drops_and_food": 0.16,
+            "ores_and_gems": 0.02,
+            "building_blocks": 0.17,
+            "mechanical_and_logistics": 0.02,
+            "power_and_digital": 0.63,
+            "magic_and_ritual": 0
+          },
+          "hazard": 0.93,
+          "rarity": {
+            "0": 0.07,
+            "1": 0.92,
+            "2": 0.01
+          }
+        },
+        "isHazardous": true,
+        "hazardousScore": 0.93,
+        "rarityScore": 0.94,
+        "latencyMs": null,
+        "usage": null,
+        "chargeNanoUsd": "0",
+        "costUsd": "0.000000000",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 374.4460770000005,
+            "usage": {
+              "input_tokens": 821,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034482",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "power_and_digital",
+                "confidence": 0.55,
+                "probabilities": {
+                  "mob_drops_and_food": 0.16,
+                  "ores_and_gems": 0.02,
+                  "building_blocks": 0.17,
+                  "mechanical_and_logistics": 0.02,
+                  "power_and_digital": 0.63,
+                  "magic_and_ritual": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.93
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.94,
+                "confidence": 0.88,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.07,
+                  "1": 0.92,
+                  "2": 0.01
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mechanical_and_logistics",
+        "action": "hold",
+        "actionReason": "Low routing confidence (60% requires operator review)",
+        "priority": "normal",
+        "confidence": 0.6,
+        "probabilities": {
+          "chest": {
+            "building_blocks": 0.31,
+            "power_and_digital": 0,
+            "magic_and_ritual": 0.01,
+            "ores_and_gems": 0,
+            "mechanical_and_logistics": 0.67,
+            "mob_drops_and_food": 0.01
+          },
+          "hazard": 0.04,
+          "rarity": {
+            "0": 0.04,
+            "1": 0.95,
+            "2": 0.01
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.04,
+        "rarityScore": 0.97,
+        "latencyMs": 384.0969959999784,
+        "usage": {
+          "input_tokens": 815,
+          "output_tokens": 122
+        },
+        "chargeNanoUsd": "34230",
+        "costUsd": "0.000034230",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 384.0969959999784,
+            "usage": {
+              "input_tokens": 815,
+              "output_tokens": 122
+            },
+            "costUsd": "0.000034230",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mechanical_and_logistics",
+                "confidence": 0.6,
+                "probabilities": {
+                  "building_blocks": 0.31,
+                  "power_and_digital": 0,
+                  "magic_and_ritual": 0.01,
+                  "ores_and_gems": 0,
+                  "mechanical_and_logistics": 0.67,
+                  "mob_drops_and_food": 0.01
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.04
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.97,
+                "confidence": 0.93,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.04,
+                  "1": 0.95,
+                  "2": 0.01
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mechanical_and_logistics",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 0.96,
+        "probabilities": {
+          "chest": {
+            "power_and_digital": 0.01,
+            "building_blocks": 0.01,
+            "magic_and_ritual": 0,
+            "mechanical_and_logistics": 0.96,
+            "ores_and_gems": 0.01,
+            "mob_drops_and_food": 0.01
+          },
+          "hazard": 0.07,
+          "rarity": {
+            "0": 0.01,
+            "1": 0.93,
+            "2": 0.06
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.07,
+        "rarityScore": 1.04,
+        "latencyMs": 692.2820359999896,
+        "usage": {
+          "input_tokens": 813,
+          "output_tokens": 122
+        },
+        "chargeNanoUsd": "34146",
+        "costUsd": "0.000034146",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 692.2820359999896,
+            "usage": {
+              "input_tokens": 813,
+              "output_tokens": 122
+            },
+            "costUsd": "0.000034146",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mechanical_and_logistics",
+                "confidence": 0.96,
+                "probabilities": {
+                  "power_and_digital": 0.01,
+                  "building_blocks": 0.01,
+                  "magic_and_ritual": 0,
+                  "mechanical_and_logistics": 0.96,
+                  "ores_and_gems": 0.01,
+                  "mob_drops_and_food": 0.01
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.07
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.04,
+                "confidence": 0.9,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.01,
+                  "1": 0.93,
+                  "2": 0.06
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "building_blocks",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "mob_drops_and_food": 0,
+            "building_blocks": 1,
+            "magic_and_ritual": 0,
+            "mechanical_and_logistics": 0,
+            "power_and_digital": 0,
+            "ores_and_gems": 0
+          },
+          "hazard": 0.03,
+          "rarity": {
+            "0": 0.22,
+            "1": 0.76,
+            "2": 0.02
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.03,
+        "rarityScore": 0.8,
+        "latencyMs": 745.5774820000515,
+        "usage": {
+          "input_tokens": 813,
+          "output_tokens": 117
+        },
+        "chargeNanoUsd": "34146",
+        "costUsd": "0.000034146",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 745.5774820000515,
+            "usage": {
+              "input_tokens": 813,
+              "output_tokens": 117
+            },
+            "costUsd": "0.000034146",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "building_blocks",
+                "confidence": 1,
+                "probabilities": {
+                  "mob_drops_and_food": 0,
+                  "building_blocks": 1,
+                  "magic_and_ritual": 0,
+                  "mechanical_and_logistics": 0,
+                  "power_and_digital": 0,
+                  "ores_and_gems": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.03
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.8,
+                "confidence": 0.65,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.22,
+                  "1": 0.76,
+                  "2": 0.02
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mechanical_and_logistics",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 0.81,
+        "probabilities": {
+          "chest": {
+            "magic_and_ritual": 0,
+            "mechanical_and_logistics": 0.85,
+            "building_blocks": 0,
+            "mob_drops_and_food": 0,
+            "power_and_digital": 0.15,
+            "ores_and_gems": 0
+          },
+          "hazard": 0.05,
+          "rarity": {
+            "0": 0,
+            "1": 0.84,
+            "2": 0.16
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.05,
+        "rarityScore": 1.16,
+        "latencyMs": 390.5954239999992,
+        "usage": {
+          "input_tokens": 813,
+          "output_tokens": 122
+        },
+        "chargeNanoUsd": "34146",
+        "costUsd": "0.000034146",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 390.5954239999992,
+            "usage": {
+              "input_tokens": 813,
+              "output_tokens": 122
+            },
+            "costUsd": "0.000034146",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mechanical_and_logistics",
+                "confidence": 0.81,
+                "probabilities": {
+                  "magic_and_ritual": 0,
+                  "mechanical_and_logistics": 0.85,
+                  "building_blocks": 0,
+                  "mob_drops_and_food": 0,
+                  "power_and_digital": 0.15,
+                  "ores_and_gems": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.05
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.16,
+                "confidence": 0.75,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0,
+                  "1": 0.84,
+                  "2": 0.16
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mechanical_and_logistics",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "mechanical_and_logistics": 1,
+            "magic_and_ritual": 0,
+            "ores_and_gems": 0,
+            "power_and_digital": 0,
+            "building_blocks": 0,
+            "mob_drops_and_food": 0
+          },
+          "hazard": 0.04,
+          "rarity": {
+            "0": 0.03,
+            "1": 0.96,
+            "2": 0.01
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.04,
+        "rarityScore": 0.98,
+        "latencyMs": 756.841425999999,
+        "usage": {
+          "input_tokens": 815,
+          "output_tokens": 122
+        },
+        "chargeNanoUsd": "34230",
+        "costUsd": "0.000034230",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 756.841425999999,
+            "usage": {
+              "input_tokens": 815,
+              "output_tokens": 122
+            },
+            "costUsd": "0.000034230",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mechanical_and_logistics",
+                "confidence": 1,
+                "probabilities": {
+                  "mechanical_and_logistics": 1,
+                  "magic_and_ritual": 0,
+                  "ores_and_gems": 0,
+                  "power_and_digital": 0,
+                  "building_blocks": 0,
+                  "mob_drops_and_food": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.04
+              },
+              "rarity": {
+                "type": "score",
+                "score": 0.98,
+                "confidence": 0.95,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.03,
+                  "1": 0.96,
+                  "2": 0.01
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mob_drops_and_food",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 0.75,
+        "probabilities": {
+          "chest": {
+            "building_blocks": 0,
+            "ores_and_gems": 0,
+            "power_and_digital": 0,
+            "magic_and_ritual": 0.21,
+            "mob_drops_and_food": 0.79,
+            "mechanical_and_logistics": 0
+          },
+          "hazard": 0.11,
+          "rarity": {
+            "0": 0.22,
+            "1": 0.07,
+            "2": 0.71
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.11,
+        "rarityScore": 1.48,
+        "latencyMs": 387.7259840000188,
+        "usage": {
+          "input_tokens": 832,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34944",
+        "costUsd": "0.000034944",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 387.7259840000188,
+            "usage": {
+              "input_tokens": 832,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034944",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mob_drops_and_food",
+                "confidence": 0.75,
+                "probabilities": {
+                  "building_blocks": 0,
+                  "ores_and_gems": 0,
+                  "power_and_digital": 0,
+                  "magic_and_ritual": 0.21,
+                  "mob_drops_and_food": 0.79,
+                  "mechanical_and_logistics": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.11
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.48,
+                "confidence": 0.22,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.22,
+                  "1": 0.07,
+                  "2": 0.71
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mob_drops_and_food",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "mechanical_and_logistics": 0,
+            "mob_drops_and_food": 1,
+            "power_and_digital": 0,
+            "magic_and_ritual": 0,
+            "ores_and_gems": 0,
+            "building_blocks": 0
+          },
+          "hazard": 0.03,
+          "rarity": {
+            "0": 0.27,
+            "1": 0.19,
+            "2": 0.54
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.03,
+        "rarityScore": 1.28,
+        "latencyMs": 702.4251999999979,
+        "usage": {
+          "input_tokens": 813,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34146",
+        "costUsd": "0.000034146",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 702.4251999999979,
+            "usage": {
+              "input_tokens": 813,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034146",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mob_drops_and_food",
+                "confidence": 1,
+                "probabilities": {
+                  "mechanical_and_logistics": 0,
+                  "mob_drops_and_food": 1,
+                  "power_and_digital": 0,
+                  "magic_and_ritual": 0,
+                  "ores_and_gems": 0,
+                  "building_blocks": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.03
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.28,
+                "confidence": 0,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0.27,
+                  "1": 0.19,
+                  "2": 0.54
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "mechanical_and_logistics",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "mob_drops_and_food": 0,
+            "magic_and_ritual": 0,
+            "ores_and_gems": 0,
+            "mechanical_and_logistics": 1,
+            "building_blocks": 0,
+            "power_and_digital": 0
+          },
+          "hazard": 0.06,
+          "rarity": {
+            "0": 0,
+            "1": 0.98,
+            "2": 0.02
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.06,
+        "rarityScore": 1.02,
+        "latencyMs": 366.66786200000206,
+        "usage": {
+          "input_tokens": 817,
+          "output_tokens": 122
+        },
+        "chargeNanoUsd": "34314",
+        "costUsd": "0.000034314",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 366.66786200000206,
+            "usage": {
+              "input_tokens": 817,
+              "output_tokens": 122
+            },
+            "costUsd": "0.000034314",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "mechanical_and_logistics",
+                "confidence": 1,
+                "probabilities": {
+                  "mob_drops_and_food": 0,
+                  "magic_and_ritual": 0,
+                  "ores_and_gems": 0,
+                  "mechanical_and_logistics": 1,
+                  "building_blocks": 0,
+                  "power_and_digital": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.06
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.02,
+                "confidence": 0.97,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0,
+                  "1": 0.98,
+                  "2": 0.02
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "power_and_digital",
+        "action": "store",
+        "actionReason": "Standard warehouse storage routing",
+        "priority": "normal",
+        "confidence": 1,
+        "probabilities": {
+          "chest": {
+            "mechanical_and_logistics": 0,
+            "magic_and_ritual": 0,
+            "building_blocks": 0,
+            "ores_and_gems": 0,
+            "power_and_digital": 1,
+            "mob_drops_and_food": 0
+          },
+          "hazard": 0.03,
+          "rarity": {
+            "0": 0,
+            "1": 0.77,
+            "2": 0.23
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.03,
+        "rarityScore": 1.23,
+        "latencyMs": 344.76169900002424,
+        "usage": {
+          "input_tokens": 815,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34230",
+        "costUsd": "0.000034230",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 344.76169900002424,
+            "usage": {
+              "input_tokens": 815,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034230",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "power_and_digital",
+                "confidence": 1,
+                "probabilities": {
+                  "mechanical_and_logistics": 0,
+                  "magic_and_ritual": 0,
+                  "building_blocks": 0,
+                  "ores_and_gems": 0,
+                  "power_and_digital": 1,
+                  "mob_drops_and_food": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.03
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.23,
+                "confidence": 0.65,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0,
+                  "1": 0.77,
+                  "2": 0.23
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "status": 200,
+      "body": {
+        "taxonomyVersion": 2,
+        "source": "live",
+        "model": "jev-1.13.0",
+        "chest": "power_and_digital",
+        "action": "store",
+        "actionReason": "High priority express dispatch",
+        "priority": "high",
+        "confidence": 0.79,
+        "probabilities": {
+          "chest": {
+            "magic_and_ritual": 0,
+            "mechanical_and_logistics": 0.17,
+            "building_blocks": 0,
+            "ores_and_gems": 0.01,
+            "power_and_digital": 0.82,
+            "mob_drops_and_food": 0
+          },
+          "hazard": 0.09,
+          "rarity": {
+            "0": 0,
+            "1": 0.33,
+            "2": 0.67
+          }
+        },
+        "isHazardous": false,
+        "hazardousScore": 0.09,
+        "rarityScore": 1.67,
+        "latencyMs": 313.2241399999475,
+        "usage": {
+          "input_tokens": 829,
+          "output_tokens": 120
+        },
+        "chargeNanoUsd": "34818",
+        "costUsd": "0.000034818",
+        "programId": "storage",
+        "mode": "parallel",
+        "stages": [
+          {
+            "stage": "parallel_scan",
+            "status": "completed",
+            "latencyMs": 313.2241399999475,
+            "usage": {
+              "input_tokens": 829,
+              "output_tokens": 120
+            },
+            "costUsd": "0.000034818",
+            "answers": {
+              "chest": {
+                "type": "choice",
+                "choice": "power_and_digital",
+                "confidence": 0.79,
+                "probabilities": {
+                  "magic_and_ritual": 0,
+                  "mechanical_and_logistics": 0.17,
+                  "building_blocks": 0,
+                  "ores_and_gems": 0.01,
+                  "power_and_digital": 0.82,
+                  "mob_drops_and_food": 0
+                }
+              },
+              "is_hazardous": {
+                "type": "noul",
+                "noul": 0.09
+              },
+              "rarity": {
+                "type": "score",
+                "score": 1.67,
+                "confidence": 0.5,
+                "legend": {
+                  "0": "Common naturally gathered material",
+                  "1": "Crafted machine or mid-tier utility",
+                  "2": "Rare resource or advanced endgame apparatus"
+                },
+                "probabilities": {
+                  "0": 0,
+                  "1": 0.33,
+                  "2": 0.67
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "searchEndToEndMs": 199.0903659999999,
+  "animation": {
+    "frames": 300,
+    "averageFps": 60.002400096003804,
+    "medianFrameMs": 16.69999999999709,
+    "p95FrameMs": 16.799999999999272
+  },
+  "verdict": "passed"
+}

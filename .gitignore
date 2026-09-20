@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+dist/
+block_files.json
+.cache/
+artifacts/*.json
+__pycache__/
+.private/

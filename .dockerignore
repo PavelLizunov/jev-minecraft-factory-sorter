@@ -1,0 +1,9 @@
+.git
+node_modules
+dist
+.cache
+artifacts
+.private
+.env*
+scripts
+README.md
