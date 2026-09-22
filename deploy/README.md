@@ -12,9 +12,9 @@ Runtime key: `/opt/jev-factory/secrets/runtime.env`, mode 0600, outside Git and 
 
 The container runs as `node` with read-only root, dropped capabilities, no-new-privileges, 256 MiB memory/one CPU/64 PID limits, healthcheck and `unless-stopped` restart policy. Backend port is bound to the private LAN address; no router port forward was added. Existing main site is on port 18910.
 
-## Public API & Uncapped Throughput
+## Public API & Zero-Spend Demo Mode
 
-Anyone can now request classification. Local artificial caps (the 120 requests/minute throttle and 6-concurrency cap) have been removed per owner specification. The backend operates without local throttling; if the upstream TypeSafe AI service returns rate-limit signals (HTTP 429), they are propagated cleanly to the client. Input validation (8 KiB, length bounds) and repeat-query caching (up to 1,000 entries) remain in place.
+Anyone can request classification. The public deployment runs by default in **Zero-Spend Simulated Demo Mode** (`LIVE_API!=true`): Jev System 1 typed decisions, token accounting, and hazard triage are simulated locally across all 1231 catalog items and custom Anvil prompts with high fidelity. Exactly 0 outbound requests are sent to `api.typesafe.ai`, guaranteeing $0.00 cost and zero token consumption regardless of visitor traffic or benchmark runs. Input validation (8 KiB, length bounds) and repeat-query caching (up to 1,000 entries) remain in place. To route to upstream live Jev, set `LIVE_API=true` in `runtime.env`.
 
 ## Release updates
 

@@ -16,7 +16,10 @@ if (!apiKey) {
     apiKey = value?.replace(/^(['"])(.*)\1$/, '$2');
   } catch { /* Missing credentials produce an explicit unavailable state. */ }
 }
-const classifier = createClassifier({ apiKey });
+
+// Pure zero-spend demo mode: simulate Jev System 1 locally unless LIVE_API=true is explicitly set
+const isSimulated = process.env.LIVE_API !== 'true';
+const classifier = createClassifier({ apiKey: apiKey || 'simulated-demo-key', simulated: isSimulated });
 const app = express();
 app.disable('x-powered-by');
 app.use((req, res, next) => {
@@ -37,7 +40,12 @@ app.use(express.json({ limit: '8kb' }));
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'public/data/blocks.json'), 'utf8'));
 app.get('/api/blocks', (_req, res) => res.json({ blocks: catalog }));
 app.get('/api/programs', (_req, res) => res.json({ programs: TAXONOMY.programs, defaultProgramId: TAXONOMY.defaultProgramId, defaultPolicy: TAXONOMY.defaultPolicy }));
-app.get('/api/health', (_req, res) => res.json({ status: 'ok', apiKeyPresent: Boolean(apiKey), blocksCount: catalog.length }));
+app.get('/api/health', (_req, res) => res.json({
+  status: 'ok',
+  apiKeyPresent: Boolean(apiKey || isSimulated),
+  blocksCount: catalog.length,
+  mode: isSimulated ? 'demo-simulated' : 'upstream-live'
+}));
 app.get('/api/telemetry', (_req, res) => res.json(classifier.status()));
 app.post('/api/classify', async (req, res) => {
   let input;

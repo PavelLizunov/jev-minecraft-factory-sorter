@@ -9,14 +9,14 @@ Requires Node.js 22, pnpm, and Python 3 for catalog updates.
 ```sh
 pnpm install
 pnpm run build
-TYPESAFE_API_KEY='your-key' pnpm start
+pnpm start
 ```
 
-The server binds port `3333` on all interfaces. `PORT` overrides the port. In this homelab, the existing `~/.dsh/.credentials.yaml` `TYPESAFE_API_KEY` reference is also supported when the environment variable is absent. Credentials are never included in the client bundle.
+The server binds port `3333` on all interfaces. `PORT` overrides the port.
 
-All Jev traffic uses `https://api.typesafe.ai/v1/systemone` through the fixed HTTP CONNECT proxy `http://192.168.0.142:18080`. There is no direct-network fallback. An unavailable proxy, missing key, or invalid response holds the cargo for an explicit retry.
+By default, the server runs in **Zero-Spend Simulated Demo Mode** (`LIVE_API!=true`): it simulates TypeSafe Jev System 1 locally for all 1231 catalog items, Anvil submissions, and custom policies with 0 outbound API calls and $0.00 spend. Set `LIVE_API=true` and `TYPESAFE_API_KEY` to connect to upstream `https://api.typesafe.ai/v1/systemone` via `http://192.168.0.142:18080`.
 
-The owner explicitly chose **public anonymous access** at `https://jev.ninitux.com` on 2026-09-19 and removed artificial local rate limits (the tier is unmetered; only actual upstream TypeSafe AI limits/429 are respected). Same-origin browser checks, bounded request bodies (8 KiB), a 1,000-entry cache, and 10-second timeouts remain active. Keep the backend listener on the private LAN.
+The owner explicitly chose **public anonymous access** at `https://jev.ninitux.com` and operates the public site in simulated demo mode to prevent external API token consumption. Same-origin browser checks, bounded request bodies (8 KiB), a 1,000-entry cache, and 10-second timeouts remain active. Keep the backend listener on the private LAN.
 
 ## Public domain deployment
 
